@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arabicTopNav{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(238, 236, 236);
+    gap: 20px;
+    justify-content: end;
+}
+.languageSec{
+    gap: 10px;
+    margin-right: 2rem;
+}
+.navbar1{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+
+}
+.navbarDiv{
+    height: 75%;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.leftSec{
+    gap: 30px;
+    /* background-color: azure; */
+    /* position: relative; */
+}
+.location i{
+    font-size: 1.5rem;
+    height: 100%;
+}
+.locationDropdown{
+    font-family: poppins;
+}
+.locationDropdown ul li{
+    margin-bottom: 15px;
+}
+.rightSec{
+    gap: 25px;
+    position: relative;
+    /* background-color: beige; */
+}
+.rightSec i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.rightSec .user{
+    font-size: 1rem;
+}
+.rightSec button{
+    font-family: poppins;
+    font-weight: bold;
+}
+.rightSec button i{
+    margin-right: 5px;
+}
+.cameraicon{
+    font-size: 1rem;
+}
+.categoriesList{
+    width: 100%;
+    height: 5vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.categoriesList .mainUl{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-family: roboto;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    flex-wrap: wrap;
+}
+.categoriesList .mainUl .mainLi{
+    cursor: pointer;
+    position: relative;
+}
+.dropdownItem {
+    display: none;
+    position: absolute;
+     /* Position to the right of the parent li */
+    top: 50;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 60vh;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 5px rgb(109, 108, 108); /* Ensure dropdown is above other content */
+}
+.dropdownItem5{
+    right: 5%;
+}
+.dropdownItem li {
+    padding: 10px;
+    white-space: nowrap;
+    color: black;
+    font-family: poppins;
+    font-weight:normal;
+    letter-spacing: 0px;
+     /* Prevent text wrapping */
+}
+.categoriesList li:hover .dropdownItem {
+    display: block;
+}
+
+.dropdownItem li:hover {
+    background-color: #f0f0f0;
+}
+.searchMain{
+    width: 100%;
+    height: 12vh;
+    font-family: roboto;
+}
+.searchMain input{
+    width: 60%;
+    height: 2.5rem;
+    padding-left: 5px;
+    
+}
+.searchMain button{
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 2.5rem;
+    width: 8rem;
+}
+/* .homeMain{
+    width: 100%;
+    background-color: aqua; 
+}
+.homeMain .img{
+    height: 50vh;
+}
+.homeMain img{
+    height: 48vh;
+    width: 80%;
+    padding: 0px;
+}
+.homeMain .leftSideImg, .rightSideImg{
+    background-color: rgb(31, 54, 46);
+    height: 48vh;
+    width: 10%;
+}
+.homeMain .leftSideImg{
+    background-color: rgb(165,203,83);
+}
+.homeMain .rightSideImg{
+    background-color: rgb(52,117,178);
+} */
+/* img{
+    width: 100%;
+    height: 45vh;
+} */
+ .img{
+    height: 50vh;
+    width: 100%;
+    background:url('./img/buysell.png');
+    background-size: cover;
+ }
+ .mainContent{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+ }
+ .textBanner{
+    margin-top: 1rem;
+    height: 10vh;
+    width: 90%;
+    font-family: roboto;
+    justify-content: space-between;
+ }
+ .textBanner h4{
+    font-weight: bold;
+    margin: 0px;
+ }
+ .seeAllSec{
+    gap: 10px;
+    font-size: 1.5rem;
+    color: rgb(52, 105, 250);
+ }
+ .productCategories{
+    margin-top: 2rem;
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* border: 1px solid black; */
+ }
+ .Product{
+    height:auto;
+    width: 8rem;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    transition: all 0.15s;
+    margin-bottom: 10px;
+    margin-left: 5px;
+ }
+ .prdImgSec{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: all 0.15s;
+    background-color: rgb(240, 240, 240);
+    transition: all 0.15s;
+    cursor: pointer;
+ }
+
+ .prdImg{
+    height: 60px;
+    width: 56px;
+ }
+ .prdTitle{
+    font-weight: bold;
+    font-family: roboto;
+    text-align:center;
+    cursor: pointer;
+ }
+.prdImgSec:hover{
+    box-shadow: 0px 0px 5px black;
+}
+.banner{
+    width: 100%;
+    height: 70vh;
+    margin-top: 5rem;
+    background-color: rgb(240, 240, 240);
+}
+.bannerDiv{
+    width: 80%;
+    height: 60vh;
+    justify-content: space-between;
+}
+.bannerDiv div{
+    height: 100%;
+    width: 30%;
+}
+.productAds{
+    width: 100%;
+    height: 100vh;
+}
+.bannerDiv1{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.bannerDiv h3{
+    font-family: poppins;
+}
+.bannerDiv1 img{
+    width: 250px;
+}
+.bannerDiv1 button{
+    width: 15rem;
+    color: white;
+    font-size: roboto;
+    font-weight: bold;
+    height: 3.3rem;
+    font-size: 1.7rem;
+}
+.bannerDiv2{
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 12px 0;
+}
+.bannerDiv2 div{
+    height: 10rem;
+    width: 22rem;
+    border-radius: 10px;
+    background-color: white;
+    flex-direction: column;
+    font-family: poppins;
+}
+.bannerDiv2 h1{
+    font-weight: bolder;
+}
+.carProductAds{
+    height: 50vh;
+    width: 90%;
+}
+.productButtons{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.productsImages{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.productsImages img{
+    height: 200px;
+    width: 220px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.product1 button{
+    position: absolute;
+    font-family: Roboto;
+    top: 65%;
+    left: 45%;
+    width: 7rem;
+}
+
+.product1 label{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.cardInfo{
+    height: 50vh;
+    width: 90%;
+}
+.jobVacanciesDiv{
+    width: 90%;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.jobVacanciesDiv .jobVacanciesDivFirst, .jobVacanciesDivSec{
+    width: 100%;
+    height: 15vh;
+}
+.jobVacanciesDivFirst, .jobVacanciesDivSec{
+    justify-content: space-around;
+}
+.vacancyCard{
+    width: 25rem;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.vacancyCard:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.doubleBanner{
+    height: 45vh;
+    width: 100%;
+    gap: 30px;
+}
+.doubleBanner .left,.doubleBanner .right{
+    width: 35rem;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid rgb(170, 168, 168);
+    border-radius: 5px;
+}
+.leftleft{
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+.bannerText{
+    width: 70%;
+    height: 100%;
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: start;
+}
+.bannerText h5{
+    font-weight: bolder;
+}
+.bannerImgSec{
+    width: 30%;
+    height: 100%;
+}
+.bannerImgSec img{
+    width: 100%;
+}
+.left button,.right button{
+    width: 90%;
+    font-weight: bold;
+    font-family: poppins;
+    color: white;
+    height: 3.2rem;
+}
+.Introduction{
+    height: 40vh;
+    flex-direction: column;
+    font-family: poppins;
+}
+.socialLinks{
+    height: 5rem;
+    width: 100%;
+}
+.mainSocialLinks{
+    height: 100%;
+    justify-content: space-between;
+}
+.contactLinks
+{
+    width: 30rem;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.contactLinks i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+@media screen and (max-width:990px){
+    .navbarDiv{
+        width: 95%;
+        column-gap: 10px;
+    }
+    .categoriesList{
+        display: none;
+    }
+    .rightSec{
+        gap: 10px;}
+    .rightSec i{
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .leftSec{
+        width: 100%;
+        gap: 30px;
+    }
+    .rightSec{
+        width: 100%;
+    }
+    .rightSec button{
+        font-family: poppins;
+        font-weight: normal;
+        font-size: small;
+    }
+    .searchMain{
+        margin-top: -20px;
+    }
+    /* .location{
+        position: absolute;
+        top: 100%;
+    } */
+}
