@@ -327,6 +327,7 @@
     border-radius: 10px;
     object-fit: cover;
     transition: all 0.15s;
+    cursor:pointer;
 }
 .product1 button{
     position: absolute;
